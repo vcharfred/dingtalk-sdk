@@ -1,12 +1,10 @@
 package com.taobao.api.internal.dto;
 
-import com.taobao.api.TaobaoRequest;
-
 import java.io.Serializable;
 import java.util.Map;
 
 /**
- * ÇëÇó´«ÊäÀà
+ * è¯·æ±‚ä¼ è¾“ç±»
  */
 public class RequestDTO implements Serializable {
 
