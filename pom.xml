@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dingtalk</groupId>
-    <artifactId>dingtalk-sdk</artifactId>
+    <artifactId>dingtalk-custom-sdk</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <description>阿里钉钉SKD修改版</description>
+    <description>阿里钉钉自定义请求SKD</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -21,15 +21,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.26</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.9</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.26</version>
-            <scope>provided</scope>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -40,7 +39,7 @@
     </dependencies>
 
     <build>
-        <finalName>dingtalk-sdk-1.0</finalName>
+        <finalName>dingtalk-custom-sdk-1.0</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
